@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6.1</ApiVersion>
+  <Id>krt.tools.EuclideanRhythmGeneratorTesting</Id>
+  <Version>0.1</Version>
+  <Author>kreth [kr3th@pm.me]</Author>
+  <Name>Euclidean Rhythm Generator Testing</Name>
+  <Category>Tool Development</Category>
+  <Description>A XRNX tool which (hopefully) generates euclidean rhythms from user input to GUI.</Description>
+  <Homepage>http://scripting.renoise.com</Homepage>
+  <Icon>icon.png</Icon>
+  <Platform>Windows, Mac, Linux</Platform>
+</RenoiseScriptingTool>
