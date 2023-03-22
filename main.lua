@@ -9,7 +9,7 @@ renoise.tool():add_menu_entry {
 
 function show_dialog()
 
-    local total_length_slider_value = 0x00
+    local total_length_slider_value = 0x7f
     local pulse_length_slider_value = 0x7f
     local rhythm_variation_slider_value = 0x7f
 
