@@ -11,7 +11,7 @@ function show_dialog()
 
     local total_length_slider_value = 0x7f
     local pulse_length_slider_value = 0x7f
-    local 
+    local rhythm_variation_slider_value = 0x7f
 
 
     local vb = renoise.ViewBuilder()
@@ -33,15 +33,40 @@ function show_dialog()
         min = 0,
         max = 0x7f
       },
+      vb:text {
+        text = "Pulse Length",
+        font = "bold"
+      },
+      vb:slider {
+        value = pulse_length_slider_value,
+        notifier = function(slider_value)
+          pulse_length_slider_value = slider_value
+        end,
+        min = 0,
+        max = 0x7f
+      },
+      vb:text {
+        text = "Pulse Rhythm Variation",
+        font = "bold"
+      },
+      vb:slider {
+        value = rhythm_variation_slider_value,
+        notifier = function(slider_value)
+          rhythm_variation_slider_value = slider_value
+        end,
+        min = 0,
+        max = 0x7f
+      },
       vb:button {
-        text = "Close",
+        text = "Generate",
         width = "50%",
-        height = "30%",
+        height = "50%",
         --notifier = function()
         --  dialog:close()
         --end,
-      }
+      },
     }
+    
     local dialog_buttons = {"OK"}
     
   -- print it 
